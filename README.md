@@ -4,17 +4,17 @@
 A **production-grade Tuition Management REST API** built using **Spring Boot**.  
 This project is designed to showcase **best practices** such as:
 
-- ✅ Layered architecture (Controller → Service → Repository)  
-- ✅ DTO pattern for clean request/response handling  
-- ✅ Swagger/OpenAPI documentation for API exploration  
-- ✅ Global exception handling  
-- ✅ Validation (JSR-380 / Hibernate Validator)  
-- ✅ Logging & standardized API responses  
-- ✅ Unit and integration tests  
+- Layered architecture (Controller → Service → Repository)  
+- DTO pattern for clean request/response handling  
+- Swagger/OpenAPI documentation for API exploration  
+- Global exception handling  
+- Validation (JSR-380 / Hibernate Validator)  
+- Logging & standardized API responses  
+- Unit and integration tests  
 
 ---
 
-## 🚀 Features
+## Features
 - Manage **Students, Teachers, Courses, and Enrollments**  
 - Secure REST endpoints with proper request validation  
 - Clean separation of concerns using DTOs  
@@ -22,7 +22,7 @@ This project is designed to showcase **best practices** such as:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Java 17**  
 - **Spring Boot 3.x**  
 - **Spring Data JPA (Hibernate)**  
@@ -33,7 +33,7 @@ This project is designed to showcase **best practices** such as:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 
 src/main/java/com/example/tuitionapp
@@ -49,24 +49,24 @@ src/main/java/com/example/tuitionapp
 
 ---
 
-## 📖 API Documentation
+## API Documentation
 Swagger UI is available once the application is running:  
 
-👉 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)  
+ [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)  
 
 This provides interactive documentation and allows you to test endpoints directly.
 
 ---
 
-## ⚡ Getting Started
+## Getting Started
 
-### 1️⃣ Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/shivamk01here/springboot-tuition-app-backend.git
 cd springboot-tuition-app-backend
 ````
 
-### 2️⃣ Configure Database
+### Configure Database
 
 Update your `application.properties`:
 
@@ -77,41 +77,11 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-### 3️⃣ Run the application
+### Run the application
 
 ```bash
 ./mvnw spring-boot:run
 ```
-
----
-
-## ✅ Example Endpoints
-
-### Create Student
-
-```http
-POST /api/students
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "age": 21
-}
-```
-
-### Response
-
-```json
-{
-  "id": 1,
-  "name": "John Doe",
-  "email": "john@example.com",
-  "age": 21
-}
-```
-
----
 
 ## 🧪 Testing
 
