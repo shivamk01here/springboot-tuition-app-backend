@@ -1,4 +1,4 @@
-```markdown
+
 # 🎓 Tuition Management API (Spring Boot)
 
 A **production-grade Tuition Management REST API** built using **Spring Boot**.  
